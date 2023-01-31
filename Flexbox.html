@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .count{
+            /* display flex dene se pura block le leta hai */
+            display: flex;
+            height: 200px;
+            /* inline flext utna he space leta hai jitna jrurt hota hai */
+            border: 2px solid black;
+            /* flext direction me data row aur colum me kar skte hai aur row reverse colums reverse v kar skte hai */
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* justify-content:center; */
+            /* justifiy content aye sirf main axix par kam karta hai */
+            /* align-items:center; */
+            /* alingn items aye sirf cros axis par kam krta hai */
+            /* column-gap: 20px; */
+            /* row-gap and colum-gap v hota hai gap dene par row column v leta hai specific cahhiye to alg hia */
+
+            
+        }
+        .box{
+            /* hight and width dene par koi v strech wali property kam nhe karti hai */
+            height: 100px;
+            width: 500px;
+        }
+        .box1{
+            background-color: red;
+            /* order bydifolt zero hota hai aye sirf sequance ko arrange krne me kam aata hai  */
+            order:1;
+            flex-basis: 200px;
+            /* flext-basis me sirf apne man se size de skte hai */
+        }
+        .box2{
+            background-color: yellow;
+            /* flext grow sirf ek ko bada kar dega */
+            /* flex-grow: 2; */
+            /* align-self: flex-end; */
+            /* align self se ap koi ek particulr koi center aya end me la skte hai */
+            /* align-self: center; */
+        }
+        .box3{
+            background-color: green;
+            /* flext-shrink aye jis par lagta hai ushe he sirf chota krta hia agr ham chota kre to baki ko nhe krta */
+            /* flex-shrink: 2; */
+        }
+    </style>
+</head>
+<body>
+    <!-- flex -->
+    <div class="count">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+    </div>
+</body>
+</html>
